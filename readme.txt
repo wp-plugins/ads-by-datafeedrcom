@@ -1,0 +1,117 @@
+=== Ads by datafeedr.com ===
+
+Contributors: datafeedrcom
+Tags: ads, random ads, rotating ads, datafeedr, advertisements, advertising, banner ads, banners, adsense, google adsense
+Requires at least: 3.5
+Tested up to: 3.5.1
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Add and display ads randomly on your blog. Sort ads randomly, limit the number of ads that appear, display ads in posts, widgets or template files.
+
+== Description ==
+
+The Ads plugin allows you to add advertisements to your blog.  You can add advertisements to your posts, pages or Text Widgets via the shortcode.  You can also add ads to your site by adding a function to your theme's template files.
+
+= Simple Usage (Shortcode) = 
+
+`[dfads params='']`
+
+= Simple Usage (PHP) = 
+
+`<?php echo dfads(); ?>`
+
+= Advanced Usage (Shortcode) = 
+
+`[dfads params='groups=3&limit=2']`
+
+= Advanced Usage (PHP) = 
+
+`<?php echo dfads( 'groups=3&limit=2' ); ?>`
+
+= Additional Features =
+
+* **Set impression limit** - Set how many times ad should appear before being removed from display.
+* **Set start date** - Set the date the ad should not appear before.
+* **Set end date** - Set the date the ad should not appear after.
+* **Shortcode** - Add ads to posts, pages or Text Widget using the [dfads] shortcode.
+* **PHP Function** - Embed ads in your template files with dfads() function.
+* **Supports caching** - Impressions are counted and ads are ordered displayed randomly even if you have enabled a caching plugin. (*Note: Doesn’t work if your site’s visitor has JavaScript disabled in their browser.*)
+* **Supports All Types of Ads** - Add Google Adsense, banners, images, text, in-house ads, videos, etc...  If you can add it to a Post, you can add it as an ad.
+* **Ad Groups** - Set up 'ad groups' to display different groups of ads in different places. (*Example: sidebar, footer, leaderboard, 150x150, etc...*)
+* **No Impression Count for Admins** - Enable or disable impression counting when viewing the site as an Administrator. 
+
+== Installation ==
+
+This section describes how to install the plugin and get it working.
+
+1. Upload the `ads` folder to the `/wp-content/plugins/` directory
+1. Activate the Ads plugin through the 'Plugins' menu in WordPress
+1. Configure the plugin by going to Settings > Ads.
+1. Insert the shortcode into your posts, pages or Text widget or by adding the PHP template code to your theme's template files.
+
+Check out [datafeedr.com](http://datafeedr.com/dfads/ "Ads by datafeedr.com documentation") for a full list of available parameters and their usages.
+
+== Frequently Asked Questions ==
+
+= Are there any Frequently Asked Questions? =
+
+Not yet.
+
+== Screenshots ==
+
+= Add a new ad =  
+screenshot1.jpg
+
+= Configure the ad's settings =  
+screenshot2.jpg
+
+= View a list of all of the ads you've created =  
+screenshot3.jpg
+
+= Configure plugin's settings =  
+screenshot4.jpg
+
+= Generate a shortcode =  
+screenshot5.jpg
+
+= Generate PHP code =  
+screenshot6.jpg
+
+= Add shortcode to Text widget =  
+screenshot7.jpg
+
+= View ads on site =  
+screenshot8.jpg
+
+== Video Tutorials ==
+
+View the full video tutorial playlist [here](http://www.youtube.com/playlist?list=PL-WvgpJEzoeZoqFLMVcXgSry-S6iqKo8K&feature=view_all "Video Playlist on YouTube").
+
+= Create a new ad and display a group of ads in a widget  =
+
+[youtube http://www.youtube.com/watch?v=tPL8ND0nh4o]
+
+= Display a group of ads in a post using the shortcode  =
+
+[youtube http://www.youtube.com/watch?v=jdeB_HjkYJU]
+
+= Display a group of ads above a post's content using the PHP function  =
+
+[youtube http://www.youtube.com/watch?v=eQR5HCEAvYQ]
+
+= Configure your ads to count impressions and order randomly even when using a caching plugin  =
+
+[youtube http://www.youtube.com/watch?v=M3v_1vtnh9c]
+
+= Documents most of the parameters of a shortcode or function  =
+
+[youtube http://www.youtube.com/watch?v=MU87O6J9zSo]
+
+== Changelog ==
+
+= 1.0 =
+* Initial release.
+
+
