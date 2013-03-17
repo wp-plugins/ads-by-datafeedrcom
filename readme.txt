@@ -14,6 +14,11 @@ Add and display ads randomly on your blog. Sort ads randomly, limit the number o
 
 The Ads plugin allows you to add advertisements to your blog.  You can add advertisements to your posts, pages or Text Widgets via the shortcode.  You can also add ads to your site by adding a function to your theme's template files.
 
+You have full control over how many ads get displayed as well as their sort order.
+
+[Check out 5 video tutorials!](http://wordpress.org/extend/plugins/ads-by-datafeedrcom/other_notes/ "Video Tutorials")
+
+
 = Simple Usage (Shortcode) = 
 
 `[dfads params='']`
@@ -47,7 +52,7 @@ The Ads plugin allows you to add advertisements to your blog.  You can add adver
 This section describes how to install the plugin and get it working.
 
 1. Upload the `dfads` folder to the `/wp-content/plugins/` directory
-1. Activate the Ads plugin through the 'Plugins' menu in WordPress
+1. Activate the *Ads by datafeedr.com* plugin through the 'Plugins' menu in WordPress
 1. Configure the plugin by going to Settings > Ads.
 1. Insert the shortcode into your posts, pages or Text widget or by adding the PHP template code to your theme's template files.
 
