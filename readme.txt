@@ -51,7 +51,7 @@ You have full control over how many ads get displayed as well as their sort orde
 
 This section describes how to install the plugin and get it working.
 
-1. Upload the `dfads` folder to the `/wp-content/plugins/` directory
+1. Upload the `ads-by-datafeedrcom` folder to the `/wp-content/plugins/` directory
 1. Activate the *Ads by datafeedr.com* plugin through the 'Plugins' menu in WordPress
 1. Configure the plugin by going to Settings > Ads.
 1. Insert the shortcode into your posts, pages or Text widget or by adding the PHP template code to your theme's template files.
@@ -67,28 +67,28 @@ Not yet.
 == Screenshots ==
 
 = Add a new ad =  
-screenshot1.jpg
+`/assets/screenshot1.jpg`
 
 = Configure the ad's settings =  
-screenshot2.jpg
+`/assets/screenshot2.jpg`
 
 = View a list of all of the ads you've created =  
-screenshot3.jpg
+`/assets/screenshot3.jpg`
 
 = Configure plugin's settings =  
-screenshot4.jpg
+`/assets/screenshot4.jpg`
 
 = Generate a shortcode =  
-screenshot5.jpg
+`/assets/screenshot5.jpg`
 
 = Generate PHP code =  
-screenshot6.jpg
+`/assets/screenshot6.jpg`
 
 = Add shortcode to Text widget =  
-screenshot7.jpg
+`/assets/screenshot7.jpg`
 
 = View ads on site =  
-screenshot8.jpg
+`/assets/screenshot8.jpg`
 
 == Video Tutorials ==
 
