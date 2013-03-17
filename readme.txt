@@ -65,30 +65,14 @@ Check out [datafeedr.com](http://datafeedr.com/dfads/ "Ads by datafeedr.com docu
 Not yet.
 
 == Screenshots ==
-
-= Add a new ad =  
-`/assets/screenshot1.jpg`
-
-= Configure the ad's settings =  
-`/assets/screenshot2.jpg`
-
-= View a list of all of the ads you've created =  
-`/assets/screenshot3.jpg`
-
-= Configure plugin's settings =  
-`/assets/screenshot4.jpg`
-
-= Generate a shortcode =  
-`/assets/screenshot5.jpg`
-
-= Generate PHP code =  
-`/assets/screenshot6.jpg`
-
-= Add shortcode to Text widget =  
-`/assets/screenshot7.jpg`
-
-= View ads on site =  
-`/assets/screenshot8.jpg`
+1. Add a new ad
+2. Configure the ad's settings
+3. View a list of all of the ads you've created
+4. Configure plugin's settings
+5. Generate a shortcode
+6. Generate PHP code
+7. Add shortcode to Text widget
+8. View ads on site
 
 == Video Tutorials ==
 
