@@ -46,7 +46,7 @@ The Ads plugin allows you to add advertisements to your blog.  You can add adver
 
 This section describes how to install the plugin and get it working.
 
-1. Upload the `ads` folder to the `/wp-content/plugins/` directory
+1. Upload the `dfads` folder to the `/wp-content/plugins/` directory
 1. Activate the Ads plugin through the 'Plugins' menu in WordPress
 1. Configure the plugin by going to Settings > Ads.
 1. Insert the shortcode into your posts, pages or Text widget or by adding the PHP template code to your theme's template files.
