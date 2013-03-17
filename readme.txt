@@ -16,7 +16,9 @@ The Ads plugin allows you to add advertisements to your blog.  You can add adver
 
 You have full control over how many ads get displayed as well as their sort order.
 
-[Check out 5 video tutorials!](http://wordpress.org/extend/plugins/ads-by-datafeedrcom/other_notes/ "Video Tutorials")
+[youtube http://www.youtube.com/watch?v=tPL8ND0nh4o]
+
+[Check out more video tutorials!](http://wordpress.org/extend/plugins/ads-by-datafeedrcom/other_notes/ "Video Tutorials")
 
 
 = Simple Usage (Shortcode) = 
