@@ -23,13 +23,13 @@ class DFADS_Admin {
     
     // Load admin specific CSS files.
     function load_css() {
-    	wp_register_style( 'dfads-admin-style', DFADS_PLUGIN_URL.'css/admin.css' );
+    	wp_register_style( 'dfads-admin-style', DFADS_PLUGIN_URL.'css/admin.css', array(), DFADS_VERSION );
         wp_enqueue_style( 'dfads-admin-style' );
     }
     
     // Load admin specific Javascript files.
     function load_js() {
-        wp_register_script( 'dfads-admin-script', DFADS_PLUGIN_URL.'js/admin.js', array( 'jquery' ), false, true );
+        wp_register_script( 'dfads-admin-script', DFADS_PLUGIN_URL.'js/admin.js', array( 'jquery' ), DFADS_VERSION, true );
         wp_enqueue_script( 'dfads-admin-script' );
     }
 	
