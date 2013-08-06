@@ -214,6 +214,10 @@ class DFADS_Admin {
 			return true;
 		}
 		
+		if ( get_post_type( $request['post'] ) == 'dfads') {
+			return true;
+		}
+		
 		return false;
 	}
 
