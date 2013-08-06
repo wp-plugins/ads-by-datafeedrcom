@@ -17,8 +17,10 @@ class DFADS_Meta_Boxes {
 	// Load Custom Meta Boxes For WordPress Plugin library.
 	// https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
 	function initialize_cmb_meta_boxes() {
-		if ( !class_exists( 'cmb_Meta_Box' ) ) {
-			require_once( DFADS_PLUGIN_PATH . 'lib/metabox/init.php' );
+		if ( DFADS_Admin::is_dfads_page() ) {
+			if ( !class_exists( 'cmb_Meta_Box' ) ) {
+				require_once( DFADS_PLUGIN_PATH . 'lib/metabox/init.php' );
+			}
 		}
 	}
 	
