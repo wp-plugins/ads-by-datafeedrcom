@@ -23,14 +23,18 @@ class DFADS_Admin {
     
     // Load admin specific CSS files.
     function load_css() {
-    	wp_register_style( 'dfads-admin-style', DFADS_PLUGIN_URL.'css/admin.css', array(), DFADS_VERSION );
-        wp_enqueue_style( 'dfads-admin-style' );
+    	if ( $this->is_dfads_page() ) {
+			wp_register_style( 'dfads-admin-style', DFADS_PLUGIN_URL.'css/admin.css', array(), DFADS_VERSION );
+			wp_enqueue_style( 'dfads-admin-style' );
+        }
     }
     
     // Load admin specific Javascript files.
     function load_js() {
-        wp_register_script( 'dfads-admin-script', DFADS_PLUGIN_URL.'js/admin.js', array( 'jquery' ), DFADS_VERSION, true );
-        wp_enqueue_script( 'dfads-admin-script' );
+    	if ( $this->is_dfads_page() ) {
+			wp_register_script( 'dfads-admin-script', DFADS_PLUGIN_URL.'js/admin.js', array( 'jquery' ), DFADS_VERSION, true );
+        	wp_enqueue_script( 'dfads-admin-script' );
+        }
     }
 	
 	// Add link to settings page to the "Settings" menu.
@@ -191,6 +195,26 @@ class DFADS_Admin {
 			'impression_limit' => __('Impression Limit'),
 			'ad' => __('Ad'), 
 		);
+	}
+	
+	// Only returns true if we're on a DFADS admin config page.
+	function is_dfads_page() {
+		
+		$request = ( isset( $_REQUEST )  ) ? $_REQUEST : false;
+		
+		if ( !$request ) {
+			return false;
+		}
+		
+		if ( $request['post_type'] == 'dfads') {
+			return true;
+		}
+		
+		if ( $request['page'] == 'dfads-settings' ) {
+			return true;
+		}
+		
+		return false;
 	}
 
 	// This determines what to show in each column on the edit.php?post_type=dfads page.
