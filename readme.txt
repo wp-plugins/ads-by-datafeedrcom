@@ -100,9 +100,5 @@ View the full video tutorial playlist [here](http://www.youtube.com/playlist?lis
 
 [youtube http://www.youtube.com/watch?v=MU87O6J9zSo]
 
-== Changelog ==
-
-= 1.0 =
-* Initial release.
 
 
