@@ -102,7 +102,7 @@ View the full video tutorial playlist [here](http://www.youtube.com/playlist?lis
 
 == Changelog ==
 
-= 1.6 =
+= 1.0.6 =
 * Fixed Warning: Illegal string offset 'dfads_enable_shortcodes_in_widgets' Errors.
 
 
