@@ -77,7 +77,7 @@ add_action('wp_ajax_dfads_ajax_load_ads', 'dfads_ajax_load_ads');
  */
 function dfads_enable_shortcodes_in_text_widget() {
     $output = get_option( 'dfads-settings' );
-	if ( $output['dfads_enable_shortcodes_in_widgets'] ) {
+	if ( isset( $output['dfads_enable_shortcodes_in_widgets'] ) ) {
 		add_filter( 'widget_text', 'do_shortcode' );
 	}
 }

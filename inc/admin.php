@@ -160,6 +160,7 @@ class DFADS_Admin {
 	// Shortcode checkbox option.
     public function dfads_enable_shortcode() {
     	$output = get_option( 'dfads-settings' );
+    	$output['dfads_enable_shortcodes_in_widgets'] = isset( $output['dfads_enable_shortcodes_in_widgets'] ) ? $output['dfads_enable_shortcodes_in_widgets'] : 0;
     	echo '
     	<fieldset class="check">
     		<label>
@@ -172,6 +173,7 @@ class DFADS_Admin {
 	// Admin impression count checkbox option.
     public function dfads_enable_count() {
     	$output = get_option( 'dfads-settings' );
+    	$output['dfads_enable_shortcodes_in_widgets'] = isset( $output['dfads_enable_shortcodes_in_widgets'] ) ? $output['dfads_enable_shortcodes_in_widgets'] : 0;
     	echo '
     	<fieldset class="check">
     		<label>
