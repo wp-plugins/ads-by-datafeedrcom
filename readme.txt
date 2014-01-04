@@ -4,7 +4,7 @@ Contributors: datafeedrcom
 Tags: ads, random ads, rotating ads, datafeedr, advertisements, advertising, banner ads, banners, adsense, google adsense
 Requires at least: 3.5
 Tested up to: 3.8.0
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -102,7 +102,7 @@ View the full video tutorial playlist [here](http://www.youtube.com/playlist?lis
 
 == Changelog ==
 
-= 1.0.6 =
+= 1.0.7 =
 * Fixed Warning: Illegal string offset 'dfads_enable_shortcodes_in_widgets' Errors.
 
 
