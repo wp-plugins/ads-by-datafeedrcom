@@ -3,7 +3,7 @@
 Plugin Name: Ads by datafeedr.com
 Plugin URI: http://www.datafeedr.com/dfads/
 Description: Randomly display any type of advertisement anywhere on your site.  Add rotating banner ads, Google Adsense, videos, text links and more to your sidebar, widget areas, posts and pages.
-Version: 1.0.8
+Version: 1.0.9
 Author: datafeedr.com
 Author URI: http://www.datafeedr.com/
 */
@@ -30,7 +30,7 @@ define( 'DFADS_PLUGIN_URL', plugin_dir_url(__FILE__) );
 define( 'DFADS_METABOX_PREFIX', '_dfads_' );
 define( 'DFADS_CONTEXT', 'dfads' );
 define( 'DFADS_DOCS_URL', 'http://www.datafeedr.com/dfads/' );
-define( 'DFADS_VERSION', '1.0.8' );
+define( 'DFADS_VERSION', '1.0.9' );
 
 /**
  * Require necessary files.
@@ -89,7 +89,7 @@ add_action( 'init', 'dfads_enable_shortcodes_in_text_widget' );
 function dfads_save_post( $post_id ) {
     $slug = 'dfads';
     $_POST += array("{$slug}_edit_nonce" => '');
-    if ( $slug != $_POST['post_type'] ) { return; }
+    if ( isset( $_POST['post_type'] ) && $slug != $_POST['post_type'] ) { return; }
     if ( !current_user_can( 'edit_post', $post_id ) ) { return; }
     if ( !wp_verify_nonce( $_POST["{$slug}_edit_nonce"], plugin_basename( __FILE__ ) ) ) { return; }
     if ( isset( $post_id ) ) {

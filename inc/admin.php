@@ -23,7 +23,7 @@ class DFADS_Admin {
     
     // Load admin specific CSS files.
     function load_css() {
-    	if ( $this->is_dfads_page() ) {
+    	if ( self::is_dfads_page() ) {
 			wp_register_style( 'dfads-admin-style', DFADS_PLUGIN_URL.'css/admin.css', array(), DFADS_VERSION );
 			wp_enqueue_style( 'dfads-admin-style' );
         }
@@ -31,7 +31,7 @@ class DFADS_Admin {
     
     // Load admin specific Javascript files.
     function load_js() {
-    	if ( $this->is_dfads_page() ) {
+    	if ( self::is_dfads_page() ) {
 			wp_register_script( 'dfads-admin-script', DFADS_PLUGIN_URL.'js/admin.js', array( 'jquery' ), DFADS_VERSION, true );
         	wp_enqueue_script( 'dfads-admin-script' );
         }
@@ -200,7 +200,7 @@ class DFADS_Admin {
 	}
 	
 	// Only returns true if we're on a DFADS admin config page.
-	function is_dfads_page() {
+	static function is_dfads_page() {
 		
 		$request = ( isset( $_REQUEST )  ) ? $_REQUEST : false;
 		
@@ -208,15 +208,15 @@ class DFADS_Admin {
 			return false;
 		}
 		
-		if ( $request['post_type'] == 'dfads') {
+		if ( isset( $request['post_type'] ) && $request['post_type'] == 'dfads') {
 			return true;
 		}
 		
-		if ( $request['page'] == 'dfads-settings' ) {
+		if ( isset( $request['page'] ) && $request['page'] == 'dfads-settings' ) {
 			return true;
 		}
 		
-		if ( get_post_type( $request['post'] ) == 'dfads') {
+		if ( isset( $request['post'] ) && get_post_type( $request['post'] ) == 'dfads') {
 			return true;
 		}
 		
