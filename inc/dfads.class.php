@@ -191,7 +191,7 @@ class DFADS {
 		// Don't count if admin AND admin impressions don't count.
 		if ( current_user_can('level_10') ) {
 			$output = get_option( 'dfads-settings' );
-			if ( $output['dfads_enable_count_for_admin'] != '1' ) {
+			if ( !isset( $output['dfads_enable_count_for_admin'] ) || $output['dfads_enable_count_for_admin'] != '1' ) {
 				return;
 			}
 		}
