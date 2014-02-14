@@ -1,6 +1,6 @@
 === Ads by datafeedr.com ===
 
-Contributors: datafeedrcom
+Contributors: datafeedr.com
 Tags: ads, random ads, rotating ads, datafeedr, advertisements, advertising, banner ads, banners, adsense, google adsense
 Requires at least: 3.5
 Tested up to: 3.8.1
